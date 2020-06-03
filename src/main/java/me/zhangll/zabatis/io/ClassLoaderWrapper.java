@@ -12,7 +12,7 @@ public class ClassLoaderWrapper {
         this.systemClassLoder = ClassLoader.getSystemClassLoader();
     }
 
-    public URL getResourceAsURL(String resource){
+    public URL getResourceAsURL(String resource, ClassLoader classLoader){
         return getResourceAsURL(resource, getClassLoaders(null));
     }
 
