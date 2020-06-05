@@ -20,7 +20,7 @@ public class Log4j2LoggerImpl implements Log{
 
 
     @Override
-    public boolean isDebugEnable() {
+    public boolean isDebugEnabled() {
         return log.isDebugEnabled();
     }
 

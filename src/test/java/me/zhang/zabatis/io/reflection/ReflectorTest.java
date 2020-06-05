@@ -1,7 +1,7 @@
 package me.zhang.zabatis.io.reflection;
 
 import org.junit.Test;
-import reflection.Reflector;
+import me.zhangll.zabatis.reflection.Reflector;
 
 import java.lang.reflect.InvocationTargetException;
 

@@ -1,7 +1,6 @@
 package me.zhangll.zabatis.logging;
 
 import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 
 public class LogFactory {
 
@@ -16,6 +15,10 @@ public class LogFactory {
 
     private LogFactory(){
         //不能实例化
+    }
+
+    public static Log getLog(Class<?> clazz){
+        return getLog(clazz.getName());
     }
 
     public static Log getLog(String logger){
@@ -47,7 +50,7 @@ public class LogFactory {
             Constructor<? extends Log> candidate = implClass.getConstructor(String.class);
             Log log = candidate.newInstance(LogFactory.class.getName());
 
-            if (log.isDebugEnable()){
+            if (log.isDebugEnabled()){
                 log.debug("Logging 初始化: "+ implClass);
             }
 

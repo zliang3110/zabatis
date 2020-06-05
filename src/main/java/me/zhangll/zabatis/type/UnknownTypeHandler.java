@@ -15,8 +15,8 @@
  */
 package me.zhangll.zabatis.type;
 
-import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.session.Configuration;
+import me.zhangll.zabatis.io.Resources;
+import me.zhangll.zabatis.session.Configuration;
 
 import java.sql.*;
 import java.util.HashMap;

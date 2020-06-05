@@ -12,6 +12,7 @@ public class LoggerTest {
     @Test
     public void getLoggerTest(){
 
+
         Log log = LogFactory.getLog(ResourceTest.class.getName());
         log.error("Hi...");
     }

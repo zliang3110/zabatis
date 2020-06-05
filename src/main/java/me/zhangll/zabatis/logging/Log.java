@@ -2,7 +2,7 @@ package me.zhangll.zabatis.logging;
 
 public interface Log {
 
-    boolean isDebugEnable();
+    boolean isDebugEnabled();
 
     boolean isTraceEnable();
 

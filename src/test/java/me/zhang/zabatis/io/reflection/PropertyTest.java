@@ -2,7 +2,7 @@ package me.zhang.zabatis.io.reflection;
 
 import me.zhang.zabatis.io.pojo.Human;
 import org.junit.Test;
-import reflection.property.PropertyCopier;
+import me.zhangll.zabatis.reflection.property.PropertyCopier;
 
 public class PropertyTest {
 
